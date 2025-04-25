@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>
+        <img src="{{ url_for('static', filename='images/MARS.png') }}" alt="Mars"
+             style="height: 40px; vertical-align: middle;">
+        Аварийный доступ
+    </h1>
+
+    <p style="font-size: 22px;">id астронавта</p>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Введите ID астронавта</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <p style="font-size: 22px;">Пароль астронавта</p>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Введите пароль астронавта</span>
+    <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <p style="font-size: 22px;">id капитана</p>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Введите ID капитана</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <p style="font-size: 22px;">Пароль капитана</p>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Введите пароль капитана</span>
+    <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Доступ</button>
+{% endblock %}
